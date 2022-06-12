@@ -1,0 +1,45 @@
+{
+  "name": "backend_nodejs_ejs",
+  "version": "1.0.0",
+  "description": "Backend del proyecto realizado en la escuela de JS en 2021",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint",
+    "migrations:generate": "sequelize-cli migration:generate --name",
+    "migrations:run": "sequelize-cli db:migrate",
+    "migrations:delete": "sequelize-cli db:migrate:undo:all"
+  },
+  "keywords": [
+    "Backend"
+  ],
+  "author": "Sergio Perez",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.0",
+    "sequelize-cli": "^6.3.0"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.13.0"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
